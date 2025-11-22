@@ -1,0 +1,30 @@
+<?php
+/**
+ * View template for Item Set Links block
+ * 
+ * Available variables:
+ * - $description: The description text (if provided)
+ * - $itemSetData: Array of item sets with title, url, and class
+ * - $block: The block representation
+ */
+?>
+
+<?php if (!empty($description)): ?>
+<div class="home-description">
+    <?php echo $this->escapeHtml($description); ?>
+</div>
+<?php endif; ?>
+
+<?php if (!empty($itemSetData)): ?>
+<div class="home-link-container">
+    <?php foreach ($itemSetData as $data): ?>
+        <div class="home-link-item">
+            <a href="<?php echo $this->escapeHtml($data['url']); ?>">
+                <span class="<?php echo $this->escapeHtml($data['class']); ?>">
+                    <?php echo $this->escapeHtml($data['title']); ?>
+                </span>
+            </a>
+        </div>
+    <?php endforeach; ?>
+</div>
+<?php endif; ?>
