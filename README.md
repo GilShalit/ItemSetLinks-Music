@@ -15,6 +15,7 @@ A custom Omeka S module that adds a block for displaying links to item sets with
 ## Requirements
 
 - Omeka S 4.0.0 or higher
+- The [Internationalisation]https://github.com/Daniel-KM/Omeka-S-module-Internationalisation module enabled for translation support
 
 ## Installation
 
@@ -58,7 +59,15 @@ Enter the IDs of the item sets you want to display, separated by commas.
 - Click on an item set
 - Look at the URL: `admin/item-set/123/edit` - the number `123` is the ID
 
-#### 2. Description (Optional)
+#### 2. Item Set Display as list (Required)
+Enter True for Item set to displayed as list or False for displayed as grid.
+
+**Example:**
+```
+True,True,True,False,True,False
+```
+
+#### 3. Description (Optional)
 Enter a description text that will appear above the item set links.
 
 **Example:**
@@ -77,23 +86,6 @@ Leave this field empty if you don't want a description.
 ## How Translation Works
 
 The module automatically displays item set titles in the current page locale. Here's how to set up translations:
-
-### Adding Translations to Item Sets
-
-1. Go to admin panel → **Item Sets**
-2. Click **Edit** on an item set
-3. For the **Title** field, add translations:
-   - Click the language selector next to the title field
-   - Add the title in each language you support (English, Hebrew, Arabic, etc.)
-4. **Save** the item set
-5. Repeat for all item sets
-
-**Example:**
-- English: "Recordings"
-- Hebrew: "הקלטות"
-- Arabic: "التسجيلات"
-
-When a user visits your page in Hebrew, they'll see "הקלטות". When they visit in English, they'll see "Recordings".
 
 ## Styling
 
@@ -171,14 +163,11 @@ This is a custom module created for a specific use case. For issues or questions
 - Review the code comments in the module files
 - Consult the Omeka S forums: https://forum.omeka.org/
 
-## License
+## Copyright
+Freedom S - Music is Copyright © 2025-present Gil Shalit https://www.dh-dev.com, Gil.Shalit@gmail.com
 
-GPL-3.0
+The module is licensed under the GNU General Public License, version 3 (GPLv3). Please attribute when using!
 
-## Version History
+The Omeka name is a registered trademark of the Corporation for Digital Scholarship.
 
-### 1.0.0 (Initial Release)
-- Basic item set links block
-- Translation support
-- Configurable item set IDs
-- Optional description field
+All rights not expressly granted are reserved.
