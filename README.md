@@ -15,7 +15,7 @@ A custom Omeka S module that adds a block for displaying links to item sets with
 ## Requirements
 
 - Omeka S 4.0.0 or higher
-- The [Internationalisation]https://github.com/Daniel-KM/Omeka-S-module-Internationalisation module enabled for translation support
+- The [Internationalisation](https://github.com/Daniel-KM/Omeka-S-module-Internationalisation) module enabled for translation support
 
 ## Installation
 
